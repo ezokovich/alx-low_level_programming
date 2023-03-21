@@ -7,12 +7,12 @@
 int main (void)
 {
 	_putchar('_');
-	_putchar('113');
+	_putchar(113);
 	_putchar('u');
 	_putchar('t');
 	_putchar('c');
 	_putchar('h');
-	_putchar('98');
+	_putchar(98);
 	_putchar('r');
 	_putchar('\n');
 
