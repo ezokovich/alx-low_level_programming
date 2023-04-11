@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		cct[i] = s2[ci];
 		i++, ci++;
 	}
-	conct[i] = '\0';
+	cct[i] = '\0';
 	return (cct);
 }
 
