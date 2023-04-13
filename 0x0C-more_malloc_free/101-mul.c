@@ -13,10 +13,11 @@
  * Return: int
 **/
 
+
 int main(int argc, char *argv[])
 {
 	unsigned long mul;
-	int a, j;
+	int i, j;
 
 	if (argc != 3)
 	{
@@ -25,11 +26,11 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	for (a = 1; a < argc; a++)
+	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[a][j] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[a][j] > 57 || argv[a][j] < 48)
+			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{
 				printf("Error\n");
 
