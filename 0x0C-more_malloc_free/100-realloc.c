@@ -4,7 +4,7 @@
 /**
  * _realloc - Main Entry
  *
- * @ptr: input let them hear
+ * @p: input let them hear
  *
  * @old_size: input that we are the best
  *
