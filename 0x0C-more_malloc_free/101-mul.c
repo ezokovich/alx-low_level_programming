@@ -16,8 +16,7 @@
 int main(int argc, char *argv[])
 {
 	unsigned long mul;
-
-	int a, b;
+	int a, j;
 
 	if (argc != 3)
 	{
@@ -28,9 +27,9 @@ int main(int argc, char *argv[])
 
 	for (a = 1; a < argc; a++)
 	{
-		for (b = 0; argv[a][b] != '\0'; b++)
+		for (j = 0; argv[a][j] != '\0'; j++)
 		{
-			if (argv[a][b] > 57 || argv[a][b] < 48)
+			if (argv[a][j] > 57 || argv[a][j] < 48)
 			{
 				printf("Error\n");
 
@@ -38,8 +37,8 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	mul = atol(argv[1]) * atol(argv[2])
-		;
+	mul = atol(argv[1]) * atol(argv[2]);
+
 	printf("%lu\n", mul);
 
 	return (0);
