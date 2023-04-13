@@ -1,9 +1,11 @@
 #include "main.h"
-#include "stdlib.h>
+#include <stdlib.h>
 
 /**
 * malloc_checked - and Main
+*
 * @b:input
+*
 * Return: 0
 */
 
@@ -13,8 +15,8 @@ void *malloc_checked(unsigned int b)
 
 
 	a =malloc(b);
-	if (p ==NULL)
+	if (a ==NULL)
 		exit(98);
-	return (p)
+	return (a);
 }
 
