@@ -1,36 +1,33 @@
+#include "3-calc.h"
 #include <string.h>
-
+#include <stdio.h>
 /**
- * get_op_func - Compares function with pointer and returns the equal
+ * get_op_func - Comp returns the =
  *
- * @s: point to a character
- * Return: Retn function & the operator when =.
+ * @s: points a chaactar
+ *
+ * Return: Returns  when =
 **/
 
 int (*get_op_func(char *s))(int, int)
 {
 op_t ops[] = {
-
 {"+", op_add},
-
 {"-", op_sub},
-
 {"*", op_mul},
-
 {"/", op_div},
-
 {"%", op_mod},
-
 {NULL, NULL}
 };
 
-int a = 0;
+int i = 0;
 
-while (ops[a].op != NULL)
+while (ops[i].op != NULL)
 {
-if (!strcmp(ops[a].op, s))
-return (ops[a].f);
-a++;
+if (!strcmp(ops[i].op, s))
+return (ops[i].f);
+i++;
 }
 return (NULL);
 }
+
